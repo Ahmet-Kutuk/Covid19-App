@@ -1,0 +1,23 @@
+import React from 'react'
+import logo from '../../Assets/coronavirus.svg'
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Select from './Select/Select';
+export default function Header() {
+    return (
+        <React.Fragment>
+      <CssBaseline />
+      <Container maxWidth="lg">
+            <Grid container >
+                <Grid item xs={4}>
+                <img src={logo} alt="Covid Logo"  height={100} width={100} style={{marginTop:"20px"}}/>
+                </Grid>
+                <Grid item xs={8}>
+                   <Select />
+                </Grid>
+            </Grid>
+      </Container>
+    </React.Fragment>
+    )
+}
