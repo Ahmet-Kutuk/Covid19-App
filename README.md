@@ -7,4 +7,4 @@ application shows the coronavirus chart of all times according to the countries 
 
 -Then the application can be started with the command "npm run start".
 
-!(Resim)[https://cdn.discordapp.com/attachments/341583683162996748/841531746297839686/covid.png]
+![Ekrangörüntüsü](https://cdn.discordapp.com/attachments/341583683162996748/841531746297839686/covid.png)
