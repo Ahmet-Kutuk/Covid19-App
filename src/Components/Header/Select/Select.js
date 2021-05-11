@@ -14,8 +14,9 @@ export default function SelectBox() {
   const useStyles = makeStyles((theme) => ({
     formControl: {
       margin:"50px auto",
-      width:"80%",
-      border:"1px solid white"
+      width:"90%",
+      border:"none",
+      color:'white',
     },  
   }));
  
@@ -37,7 +38,7 @@ export default function SelectBox() {
         >
          
           {countries.map((country) => (
-            <option key={country.Slug} value={country.Slug}>{country.Country}</option>
+            <option  key={country.Slug} value={country.Slug}>{country.Country}</option>
           ))};
          
         </Select>
