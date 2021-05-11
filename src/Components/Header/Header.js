@@ -28,7 +28,7 @@ export default function Header() {
                 </Grid>
                 <Grid style={{textAlign:"center",marginTop:"3rem"}} item xs={12}>
                     <Typography variant="h6">
-                    You can check the repository in my github account to examine the source code of the application.<a href="#">Source Code</a>
+                    You can check the repository in my github account to examine the source code of the application.<a href="https://github.com/Ahmet-Kutuk/Covid19-App">Source Code</a>
                     </Typography>
                 </Grid>
             </Grid>
