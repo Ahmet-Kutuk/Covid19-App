@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../../Assets/coronavirus.svg'
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Select from './Select/Select';
@@ -25,8 +26,10 @@ export default function Header() {
                    <ChartBox />
                     </Paper>
                 </Grid>
-                <Grid item xs={12}>
-                    <p style={{marginLeft:"150px",fontSize:"1.2rem",marginTop:"170px",color:"white"}}>You can check the repository in my github account to examine the source code of the application. <a target="blank" href="https://github.com/Ahmet-Kutuk/Covid19-App">Source Code</a></p>
+                <Grid style={{textAlign:"center",marginTop:"3rem"}} item xs={12}>
+                    <Typography variant="h6">
+                    You can check the repository in my github account to examine the source code of the application.<a href="#">Source Code</a>
+                    </Typography>
                 </Grid>
             </Grid>
       </Container>
