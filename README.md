@@ -9,4 +9,4 @@ application shows the coronavirus chart of all times according to the countries 
 
 ![Ekrangörüntüsü](https://cdn.discordapp.com/attachments/341583683162996748/841531746297839686/covid.png)
 
-Live Demo : [Live Demo](https://covidsapp.herokuapp.com/)
+Live Demo : [Live Demo](covid19-app-vert.vercel.app)
