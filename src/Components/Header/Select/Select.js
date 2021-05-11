@@ -1,10 +1,15 @@
 import React from 'react'
-import {useState,useEffect} from 'react';
+import {useEffect,useContext} from 'react';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import { makeStyles } from '@material-ui/core/styles';
-import {getCountryList} from '../../Api/Api';
+import {countryContext} from '../../Context/context';
 export default function SelectBox() {
+  const {getCountry} = useContext(countryContext)
+  const {country} = useContext(countryContext)
+  const {countries} = useContext(countryContext)
+  const {onChange} = useContext(countryContext)
+
 
   const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -13,17 +18,13 @@ export default function SelectBox() {
       border:"1px solid white"
     },  
   }));
-  const [countries,setCountries] = useState([]);
-  const [country,setCountry] = useState("turkey");
+ 
 
   useEffect(() => {
-    const getCountry = async () => {
-      const data = await getCountryList();
-      setCountries(data);
-    } 
+   
     getCountry();
    
-  }, [])
+  })
 
   const classes = useStyles();
     return (
@@ -32,7 +33,7 @@ export default function SelectBox() {
         <Select
           native
           value={country}
-         onChange={event => setCountry(event.target.value)}
+         onChange={onChange}
         >
          
           {countries.map((country) => (

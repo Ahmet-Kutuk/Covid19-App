@@ -4,7 +4,10 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Select from './Select/Select';
+import ChartBox from '../Chart/Chart';
 export default function Header() {
+
+
     return (
         <React.Fragment>
       <CssBaseline />
@@ -15,6 +18,9 @@ export default function Header() {
                 </Grid>
                 <Grid item xs={8}>
                    <Select />
+                </Grid>
+                <Grid item xs={12}>
+                   <ChartBox />
                 </Grid>
             </Grid>
       </Container>
